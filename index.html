@@ -12,11 +12,11 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start;
+            min-height: 100vh;
             background: linear-gradient(135deg, #ff7b7b, #7a5ef5);
             color: white;
-            overflow: hidden;
+            overflow: auto;
         }
 
         .container {
@@ -26,6 +26,7 @@
             background: rgba(0, 0, 0, 0.6);
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
         }
 
         .title {
@@ -80,6 +81,7 @@
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
+            text-align: left;
         }
 
         .feature {
@@ -123,14 +125,32 @@
                 margin-bottom: 20px;
             }
         }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 3em;
+            }
+
+            .subtitle {
+                font-size: 1.5em;
+            }
+
+            .cta a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Coming Soon</h1>
+        <h1 class="title">WiseAdvert</h1>
         <p class="subtitle">Exciting Things Are On The Way!</p>
         <p class="description">
-            We're building cutting-edge digital marketing solutions with a vision to integrate AI automation for smarter advertising. Stay tuned as we get ready to transform the way you engage with your audience.
+            Welcome to **WiseAdvert**, your go-to partner for innovative digital marketing solutions. 
+            We're working on transforming the way businesses connect with their audience using cutting-edge AI-powered tools.
+            <br><br>
+            Stay tuned as we prepare something truly groundbreaking!
         </p>
 
         <div class="cta">
@@ -140,19 +160,19 @@
         <div class="features">
             <div class="feature">
                 <h3>Innovative Marketing</h3>
-                <p>Leveraging creative strategies to make your brand stand out in a crowded market.</p>
+                <p>At **WiseAdvert**, we help brands create impactful campaigns that stand out in a crowded digital space.</p>
             </div>
             <div class="feature">
-                <h3>AI Automation</h3>
-                <p>We’re introducing AI-powered tools that will revolutionize your advertising experience.</p>
+                <h3>AI-Driven Automation</h3>
+                <p>We are pioneering the use of AI to automate and optimize advertising strategies for smarter, more efficient outcomes.</p>
             </div>
             <div class="feature">
-                <h3>Results Driven</h3>
-                <p>Focused on delivering real, measurable results that impact your business growth.</p>
+                <h3>Results-Driven Success</h3>
+                <p>Every strategy we implement is designed to drive real, measurable growth and success for your business.</p>
             </div>
         </div>
 
-        <p class="contact">For inquiries, reach out to us at <a href="mailto:info@wiseadvert.com">info@wiseadvert.com</a></p>
+        <p class="contact">Have questions? Feel free to reach out at <a href="mailto:info@wiseadvert.com">info@wiseadvert.com</a></p>
     </div>
 </body>
 </html>
