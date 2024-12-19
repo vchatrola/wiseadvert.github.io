@@ -13,60 +13,85 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(to bottom right, #4caf50, #2e7d32);
+            background: linear-gradient(135deg, #ff6ec4, #7873f5);
             color: white;
         }
 
         .container {
             text-align: center;
             max-width: 600px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
 
         .title {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: bold;
             margin: 0;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            color: #ffdf5d;
+            text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: 1.5em;
+            font-size: 1.8em;
             margin: 20px 0;
+            color: #ffe8a3;
         }
 
         .description {
-            font-size: 1em;
-            line-height: 1.6;
+            font-size: 1.1em;
+            line-height: 1.8;
             margin: 20px 0;
         }
 
-        .contact {
+        .cta {
             margin-top: 30px;
-            font-size: 0.9em;
-            opacity: 0.8;
         }
 
-        .highlight {
-            color: #ffeb3b;
+        .cta a {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: white;
+            background: #ff6ec4;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
             font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta a:hover {
+            background: #7873f5;
+            transform: scale(1.1);
+        }
+
+        .contact {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #d1d1d1;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="title">Coming Soon</h1>
-        <p class="subtitle">Welcome to <span class="highlight">WiseAdvert</span></p>
+        <p class="subtitle">Welcome to <span style="color: #ffdf5d;">WiseAdvert</span></p>
         <p class="description">
-            At WiseAdvert, we specialize in creating innovative digital marketing solutions that drive engagement and results. 
-            Our long-term vision includes integrating advanced AI automation to revolutionize how businesses reach their audience.
+            WiseAdvert is on a mission to redefine digital marketing and advertising. 
+            We’re building innovative solutions with cutting-edge AI to help businesses thrive in the modern world.
             <br><br>
-            Stay tuned as we build something amazing for you!
+            Something amazing is on the way—stay tuned!
         </p>
-        <p class="contact">Contact us: <a href="mailto:info@wiseadvert.com" style="color: #ffeb3b; text-decoration: none;">info@wiseadvert.com</a></p>
+        <div class="cta">
+            <a href="mailto:info@wiseadvert.com">Contact Us</a>
+        </div>
+        <p class="contact">Have questions? Email us at <a href="mailto:info@wiseadvert.com" style="color: #ffdf5d;">info@wiseadvert.com</a></p>
     </div>
 </body>
 </html>
