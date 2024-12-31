@@ -13,39 +13,38 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #013d5a; /* Deep blue background */
-            color: #fcf3e3; /* Off-white text */
+            background-color: #013d5a; /* Dark background */
+            color: #fcf3e3; /* Light text for contrast */
         }
 
         .container {
             text-align: center;
             max-width: 600px;
             padding: 30px;
-            background: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
+            background-color: #708c69; /* Dark-neutral container background */
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
 
         .title {
             font-size: 3.5em;
             font-weight: bold;
             margin: 0;
-            letter-spacing: 3px;
-            color: #f4a258; /* Warm orange for emphasis */
+            color: #fcf3e3; /* Light text */
             text-transform: uppercase;
         }
 
         .subtitle {
             font-size: 1.8em;
             margin: 20px 0;
-            color: #bdd3ce; /* Light green for contrast */
+            color: #f4a258; /* CTA highlight */
         }
 
         .description {
             font-size: 1.1em;
             line-height: 1.8;
             margin: 20px 0;
-            color: #fcf3e3; /* Off-white for readability */
+            color: #bdd3ce; /* Subtle text color */
         }
 
         .cta {
@@ -57,8 +56,8 @@
             padding: 12px 25px;
             margin-top: 20px;
             font-size: 1em;
-            color: #013d5a; /* Deep blue on button for contrast */
-            background: #f4a258; /* Warm orange button */
+            color: #fcf3e3; /* Light text on button */
+            background-color: #f4a258; /* Button background */
             border: none;
             border-radius: 50px;
             text-decoration: none;
@@ -68,21 +67,32 @@
         }
 
         .cta a:hover {
-            background: #bdd3ce; /* Light green hover effect */
-            transform: scale(1.1);
+            background-color: #bdd3ce; /* Hover effect for button */
+            color: #013d5a; /* Darker text for hover */
+            transform: scale(1.05);
         }
 
         .contact {
             margin-top: 40px;
             font-size: 0.9em;
-            color: #fcf3e3; /* Off-white for contact info */
+            color: #fcf3e3; /* Light text */
+        }
+
+        .contact a {
+            color: #f4a258; /* Highlight for links */
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+            color: #bdd3ce; /* Softer hover effect */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="title">Coming Soon</h1>
-        <p class="subtitle">Welcome to <span style="color: #f4a258;">WiseAdvert</span></p> 
+        <p class="subtitle">Welcome to <span style="color: #bdd3ce;">WiseAdvert</span></p>
         <p class="description">
             WiseAdvert is on a mission to redefine digital marketing and advertising. 
             We’re building innovative solutions with cutting-edge AI to help businesses thrive in the modern world.
@@ -92,7 +102,7 @@
         <div class="cta">
             <a href="mailto:info.wiseadvert@gmail.com">Contact Us</a>
         </div>
-        <p class="contact">Have questions? Email us at <a href="mailto:info@wiseadvert.com" style="color: #f4a258;">info@wiseadvert.com</a></p>
+        <p class="contact">Have questions? Email us at <a href="mailto:info@wiseadvert.com">info@wiseadvert.com</a></p>
     </div>
 </body>
 </html>
